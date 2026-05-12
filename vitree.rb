@@ -5,21 +5,21 @@
 class Vitree < Formula
   desc "Tiny Go TUI that browses the current directory and forwards files to vim"
   homepage "https://github.com/hoffa/vitree"
-  version "0.4.3"
+  version "0.4.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hoffa/vitree/releases/download/v0.4.3/vitree_0.4.3_darwin_amd64.tar.gz"
-      sha256 "ecf4a7b40014f3b9ab48a095eb2d7cd0fdc39d12ffe8c4c630a6b28251b4dab7"
+      url "https://github.com/hoffa/vitree/releases/download/v0.4.4/vitree_0.4.4_darwin_amd64.tar.gz"
+      sha256 "95a99e54d648da65e3b79ebf827c42ebea21095d5b1d6caf917302fc0140276e"
 
       define_method(:install) do
         bin.install "vitree"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hoffa/vitree/releases/download/v0.4.3/vitree_0.4.3_darwin_arm64.tar.gz"
-      sha256 "cd1bc02eda01da78e64c2660f38a48b56660238f85ce796e37ba381c16c6d997"
+      url "https://github.com/hoffa/vitree/releases/download/v0.4.4/vitree_0.4.4_darwin_arm64.tar.gz"
+      sha256 "10ff9f8db4d68eeda72e835862db4e0d505e29a7bbdd56166c7aa5b193c88c6c"
 
       define_method(:install) do
         bin.install "vitree"
@@ -29,15 +29,15 @@ class Vitree < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hoffa/vitree/releases/download/v0.4.3/vitree_0.4.3_linux_amd64.tar.gz"
-      sha256 "2fe975393e5ddc052b5a0d91e8a71df51da1ab20063e6d295ec5ef5faad50cf3"
+      url "https://github.com/hoffa/vitree/releases/download/v0.4.4/vitree_0.4.4_linux_amd64.tar.gz"
+      sha256 "d3df56a4818db9f19d519d18fa56bf947db73737fdafb0c83e4b3b135409558b"
       define_method(:install) do
         bin.install "vitree"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hoffa/vitree/releases/download/v0.4.3/vitree_0.4.3_linux_arm64.tar.gz"
-      sha256 "e3ee10f18c28750691d910e4de6575f0dfdf65b43fc2ff4eefbc86214e0bb479"
+      url "https://github.com/hoffa/vitree/releases/download/v0.4.4/vitree_0.4.4_linux_arm64.tar.gz"
+      sha256 "5134d8973a9812cbba45b1cf36179e553d06a2393433934ccba8dd092bc5fa8b"
       define_method(:install) do
         bin.install "vitree"
       end
